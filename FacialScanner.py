@@ -44,7 +44,7 @@ def capture():
     last = time.time()
     while END == False:
         if time.time() - last > 0.5:
-            out = cv2.imwrite("know_faces/"+name+'/capture'+str(count)+'.jpg', frame)
+            out = cv2.imwrite("know_faces/"+name+'/'+name+str(count)+'.jpg', frame)
             last = time.time()
             count += 1
 
